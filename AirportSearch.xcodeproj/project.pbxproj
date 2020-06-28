@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5816DC1024A8FB2A006985F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC0F24A8FB2A006985F8 /* AppDelegate.swift */; };
 		5816DC1224A8FB2A006985F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC1124A8FB2A006985F8 /* SceneDelegate.swift */; };
-		5816DC1424A8FB2A006985F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC1324A8FB2A006985F8 /* ViewController.swift */; };
+		5816DC1424A8FB2A006985F8 /* AirportSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC1324A8FB2A006985F8 /* AirportSearchViewController.swift */; };
 		5816DC1724A8FB2A006985F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1524A8FB2A006985F8 /* Main.storyboard */; };
 		5816DC1924A8FB2B006985F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1824A8FB2B006985F8 /* Assets.xcassets */; };
 		5816DC1C24A8FB2B006985F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1A24A8FB2B006985F8 /* LaunchScreen.storyboard */; };
+		589011F324A92087008FBD1D /* AirportSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589011F224A92087008FBD1D /* AirportSearchViewModel.swift */; };
+		58DE10F624A9391D00008BCB /* AirportSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE10F524A9391D00008BCB /* AirportSearchCoordinator.swift */; };
 		90DF117C17CE5363C04E7B9A /* Pods_AirportSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0637BE3E78FCCF45828F638 /* Pods_AirportSearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +22,13 @@
 		5816DC0C24A8FB2A006985F8 /* AirportSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5816DC0F24A8FB2A006985F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5816DC1124A8FB2A006985F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5816DC1324A8FB2A006985F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5816DC1324A8FB2A006985F8 /* AirportSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchViewController.swift; sourceTree = "<group>"; };
 		5816DC1624A8FB2A006985F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5816DC1824A8FB2B006985F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5816DC1B24A8FB2B006985F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5816DC1D24A8FB2B006985F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589011F224A92087008FBD1D /* AirportSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchViewModel.swift; sourceTree = "<group>"; };
+		58DE10F524A9391D00008BCB /* AirportSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchCoordinator.swift; sourceTree = "<group>"; };
 		D4A95444B9C05A50AD05B1A6 /* Pods-AirportSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.release.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.release.xcconfig"; sourceTree = "<group>"; };
 		E0637BE3E78FCCF45828F638 /* Pods_AirportSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirportSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DE59F258C8D348840D024E /* Pods-AirportSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirportSearch.debug.xcconfig"; path = "Target Support Files/Pods-AirportSearch/Pods-AirportSearch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +52,6 @@
 				F1DE59F258C8D348840D024E /* Pods-AirportSearch.debug.xcconfig */,
 				D4A95444B9C05A50AD05B1A6 /* Pods-AirportSearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +76,41 @@
 		5816DC0E24A8FB2A006985F8 /* AirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				58DE10F424A938C600008BCB /* Coordinator */,
+				589011F124A92021008FBD1D /* ViewModel */,
+				589011F024A91FF1008FBD1D /* View */,
 				5816DC0F24A8FB2A006985F8 /* AppDelegate.swift */,
 				5816DC1124A8FB2A006985F8 /* SceneDelegate.swift */,
-				5816DC1324A8FB2A006985F8 /* ViewController.swift */,
 				5816DC1524A8FB2A006985F8 /* Main.storyboard */,
 				5816DC1824A8FB2B006985F8 /* Assets.xcassets */,
 				5816DC1A24A8FB2B006985F8 /* LaunchScreen.storyboard */,
 				5816DC1D24A8FB2B006985F8 /* Info.plist */,
 			);
 			path = AirportSearch;
+			sourceTree = "<group>";
+		};
+		589011F024A91FF1008FBD1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5816DC1324A8FB2A006985F8 /* AirportSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		589011F124A92021008FBD1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				589011F224A92087008FBD1D /* AirportSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58DE10F424A938C600008BCB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				58DE10F524A9391D00008BCB /* AirportSearchCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		DCE4A8D3A7A18283FD188795 /* Frameworks */ = {
@@ -207,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5816DC1424A8FB2A006985F8 /* ViewController.swift in Sources */,
+				5816DC1424A8FB2A006985F8 /* AirportSearchViewController.swift in Sources */,
 				5816DC1024A8FB2A006985F8 /* AppDelegate.swift in Sources */,
+				589011F324A92087008FBD1D /* AirportSearchViewModel.swift in Sources */,
+				58DE10F624A9391D00008BCB /* AirportSearchCoordinator.swift in Sources */,
 				5816DC1224A8FB2A006985F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amith156.AirportSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amith156.AirportSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

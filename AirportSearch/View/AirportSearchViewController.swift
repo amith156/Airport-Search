@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import RxSwift
+import RxDataSources
+class AirportSearchViewController: UIViewController {
 
-class ViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var airportSearch: UITextField!
+    @IBOutlet weak var roundedView: UIView!
+    
+    var airportSearchViewModel : AirportSearchViewProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
