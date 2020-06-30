@@ -9,17 +9,23 @@
 import UIKit
 import RxSwift
 import RxDataSources
-class AirportSearchViewController: UIViewController {
+
+class AirportSearchViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var airportSearch: UITextField!
     @IBOutlet weak var roundedView: UIView!
     
-    var airportSearchViewModel : AirportSearchViewProtocol!
+    private var airportSearchViewModel : AirportSearchViewProtocol!
+    var viewModelBuilder : AirportSearchViewProtocol.ViewModelBuilder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // viewModel is created once the closer is called.
+        airportSearchViewModel = viewModelBuilder(
+            (searchText : airportSearch.rx.text.orEmpty.asDriver() , ())
+        )
+        
     }
 
 

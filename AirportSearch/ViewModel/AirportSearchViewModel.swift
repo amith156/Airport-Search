@@ -7,17 +7,6 @@
 //
 
 import Foundation
-import RxCocoa
-
-protocol AirportSearchViewProtocol {
-    typealias Input = (
-        searchText : Driver<String>, ()
-    )
-    typealias Output = ()
-    
-    var input : AirportSearchViewProtocol.Input { get }
-    var output : AirportSearchViewProtocol.Output { get }
-}
 
 class AirportSearchViewModel : AirportSearchViewProtocol {
     var input: AirportSearchViewProtocol.Input
@@ -28,6 +17,7 @@ class AirportSearchViewModel : AirportSearchViewProtocol {
         self.output = AirportSearchViewModel.output(input: self.input)
     }
 }
+
 private extension AirportSearchViewModel {
     static func output(input : AirportSearchViewProtocol.Input) -> AirportSearchViewProtocol.Output {
         
