@@ -23,9 +23,11 @@ class AirportSearchCoordinator : BaseCoordinator {
         
         let viewController = AirportSearchViewController.instantiate()
         
+        let sharedAirportService = AirportService.shared
+        
         //this is a place where the closer of the view is called/passed. so viewModel can be created in viewDidLoad() AirportSearchViewController.
         viewController.viewModelBuilder = {
-            AirportSearchViewModel(input: $0)
+            AirportSearchViewModel(input: $0, airportService: sharedAirportService)
         }
         
         navigationViewController.pushViewController(viewController.self, animated: true)

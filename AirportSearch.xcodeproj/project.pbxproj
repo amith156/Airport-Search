@@ -13,8 +13,15 @@
 		5816DC1724A8FB2A006985F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1524A8FB2A006985F8 /* Main.storyboard */; };
 		5816DC1924A8FB2B006985F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1824A8FB2B006985F8 /* Assets.xcassets */; };
 		5816DC1C24A8FB2B006985F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5816DC1A24A8FB2B006985F8 /* LaunchScreen.storyboard */; };
+		5817B86824B23DFF008A3B6D /* HttpRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B86724B23DFF008A3B6D /* HttpRouterProtocol.swift */; };
 		587F6C5224A96D9C0080146A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F6C5124A96D9C0080146A /* CoordinatorProtocol.swift */; };
 		589011F324A92087008FBD1D /* AirportSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589011F224A92087008FBD1D /* AirportSearchViewModel.swift */; };
+		5896FC2D24B406C20044F45C /* HttpServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5896FC2C24B406C20044F45C /* HttpServiceProtocol.swift */; };
+		5896FC2F24B407E90044F45C /* AirportHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5896FC2E24B407E90044F45C /* AirportHttpService.swift */; };
+		58B5C0B724B5006100A08C91 /* AirportHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5C0B624B5006100A08C91 /* AirportHttpRouter.swift */; };
+		58B5C0B924B5421200A08C91 /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5C0B824B5421200A08C91 /* AirportService.swift */; };
+		58B5C0BB24B5425C00A08C91 /* AirportApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5C0BA24B5425C00A08C91 /* AirportApiProtocol.swift */; };
+		58B5C0BE24B5445900A08C91 /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5C0BD24B5445900A08C91 /* AirportModel.swift */; };
 		58C012D724A97BEF009DCE2A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C012D624A97BEF009DCE2A /* BaseCoordinator.swift */; };
 		58C012D924A98164009DCE2A /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C012D824A98164009DCE2A /* Storyboarded.swift */; };
 		58C012DC24A9894A009DCE2A /* AirportSearchViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C012DB24A9894A009DCE2A /* AirportSearchViewProtocol.swift */; };
@@ -32,8 +39,15 @@
 		5816DC1824A8FB2B006985F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5816DC1B24A8FB2B006985F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5816DC1D24A8FB2B006985F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5817B86724B23DFF008A3B6D /* HttpRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouterProtocol.swift; sourceTree = "<group>"; };
 		587F6C5124A96D9C0080146A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		589011F224A92087008FBD1D /* AirportSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchViewModel.swift; sourceTree = "<group>"; };
+		5896FC2C24B406C20044F45C /* HttpServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceProtocol.swift; sourceTree = "<group>"; };
+		5896FC2E24B407E90044F45C /* AirportHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHttpService.swift; sourceTree = "<group>"; };
+		58B5C0B624B5006100A08C91 /* AirportHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHttpRouter.swift; sourceTree = "<group>"; };
+		58B5C0B824B5421200A08C91 /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
+		58B5C0BA24B5425C00A08C91 /* AirportApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportApiProtocol.swift; sourceTree = "<group>"; };
+		58B5C0BD24B5445900A08C91 /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
 		58C012D624A97BEF009DCE2A /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		58C012D824A98164009DCE2A /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		58C012DB24A9894A009DCE2A /* AirportSearchViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchViewProtocol.swift; sourceTree = "<group>"; };
@@ -86,6 +100,7 @@
 		5816DC0E24A8FB2A006985F8 /* AirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				58B5C0BC24B5444200A08C91 /* Model */,
 				589FD57424AC27BB0045C220 /* Services */,
 				58C012DA24A9816E009DCE2A /* Shaired Utilities */,
 				58DE10F424A938C600008BCB /* Coordinator */,
@@ -99,6 +114,17 @@
 				5816DC1D24A8FB2B006985F8 /* Info.plist */,
 			);
 			path = AirportSearch;
+			sourceTree = "<group>";
+		};
+		5817B86624B23D24008A3B6D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				5896FC2C24B406C20044F45C /* HttpServiceProtocol.swift */,
+				5817B86724B23DFF008A3B6D /* HttpRouterProtocol.swift */,
+				5896FC2E24B407E90044F45C /* AirportHttpService.swift */,
+				58B5C0B624B5006100A08C91 /* AirportHttpRouter.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		589011F024A91FF1008FBD1D /* View */ = {
@@ -121,8 +147,19 @@
 		589FD57424AC27BB0045C220 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5817B86624B23D24008A3B6D /* Http */,
+				58B5C0BA24B5425C00A08C91 /* AirportApiProtocol.swift */,
+				58B5C0B824B5421200A08C91 /* AirportService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		58B5C0BC24B5444200A08C91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58B5C0BD24B5445900A08C91 /* AirportModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		58C012DA24A9816E009DCE2A /* Shaired Utilities */ = {
@@ -267,10 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B5C0BB24B5425C00A08C91 /* AirportApiProtocol.swift in Sources */,
 				5816DC1424A8FB2A006985F8 /* AirportSearchViewController.swift in Sources */,
 				5816DC1024A8FB2A006985F8 /* AppDelegate.swift in Sources */,
+				58B5C0B924B5421200A08C91 /* AirportService.swift in Sources */,
+				58B5C0BE24B5445900A08C91 /* AirportModel.swift in Sources */,
 				58F5983324AA4D990044D92B /* WindowCoordinator.swift in Sources */,
+				5896FC2F24B407E90044F45C /* AirportHttpService.swift in Sources */,
+				58B5C0B724B5006100A08C91 /* AirportHttpRouter.swift in Sources */,
 				587F6C5224A96D9C0080146A /* CoordinatorProtocol.swift in Sources */,
+				5817B86824B23DFF008A3B6D /* HttpRouterProtocol.swift in Sources */,
+				5896FC2D24B406C20044F45C /* HttpServiceProtocol.swift in Sources */,
 				589011F324A92087008FBD1D /* AirportSearchViewModel.swift in Sources */,
 				58C012D724A97BEF009DCE2A /* BaseCoordinator.swift in Sources */,
 				58DE10F624A9391D00008BCB /* AirportSearchCoordinator.swift in Sources */,

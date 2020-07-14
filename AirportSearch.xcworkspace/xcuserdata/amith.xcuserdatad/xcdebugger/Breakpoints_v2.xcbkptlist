@@ -3,4 +3,69 @@
    uuid = "9AAD3940-98C8-40F7-9449-44F7CAF057F7"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16E9C8B6-71FC-4D59-9B6F-D54B7769A4A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Alamofire/Source/ResponseSerialization.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "response(queue:responseSerializer:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16E9C8B6-71FC-4D59-9B6F-D54B7769A4A6 - 805d41969d165616"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amith/Documents/Xcode%20Projects/02%20Public%20Code%20CV/AirportSearch/Pods/Alamofire/Source/ResponseSerialization.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "241"
+                  endingLineNumber = "241"
+                  offsetFromSymbolStart = "2437">
+               </Location>
+               <Location
+                  uuid = "16E9C8B6-71FC-4D59-9B6F-D54B7769A4A6 - 8f8660b6fb7715e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; () in closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amith/Documents/Xcode%20Projects/02%20Public%20Code%20CV/AirportSearch/Pods/Alamofire/Source/ResponseSerialization.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "307">
+               </Location>
+               <Location
+                  uuid = "16E9C8B6-71FC-4D59-9B6F-D54B7769A4A6 - c38959409c45d113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #3 () -&gt; () in closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amith/Documents/Xcode%20Projects/02%20Public%20Code%20CV/AirportSearch/Pods/Alamofire/Source/ResponseSerialization.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "109">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
