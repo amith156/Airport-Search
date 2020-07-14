@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import Alamofire
 
 class AirportService {
     
@@ -26,23 +27,33 @@ extension AirportService : AirportApiProtocol {
                     .request(usingHttpServise: httpService)
                 .responseJSON(completionHandler: { (resultJson) in
                     
-                    guard let data = resultJson.data else { return }
-                    
-                    print(type(of: data))
                     do {
-                        
-                        let allAirports = try JSONDecoder().decode(AirportsResponce.self, from: data)
-                        single(.success(allAirports))
-                        
-                    } catch { print(error) }
-                    
+                        let allAirports = try AirportService.parseAirport(result: resultJson)
+                        single(.success(allAirports!))
+                    } catch {
+                        single(.error(error))
+                    }
                 })
-                
             } catch {
-                print(error)
+                single(.error(error))
             }
             
             return Disposables.create()
         }
+    }
+}
+
+extension AirportService {
+    
+    static func parseAirport(result : AFDataResponse<Any>) throws -> AirportsResponce? {
+        
+        guard
+            let data = result.data,
+            let allAirports = try? JSONDecoder().decode(AirportsResponce.self, from: data)
+            else {
+                throw CustomError.error(message: "Invalid Airports JSON")
+        }
+        
+        return allAirports
     }
 }

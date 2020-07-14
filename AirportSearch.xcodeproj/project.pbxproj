@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580EB3F424BE45D200AE7154 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580EB3F324BE45D200AE7154 /* CustomError.swift */; };
 		5816DC1024A8FB2A006985F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC0F24A8FB2A006985F8 /* AppDelegate.swift */; };
 		5816DC1224A8FB2A006985F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC1124A8FB2A006985F8 /* SceneDelegate.swift */; };
 		5816DC1424A8FB2A006985F8 /* AirportSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816DC1324A8FB2A006985F8 /* AirportSearchViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		580EB3F324BE45D200AE7154 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		5816DC0C24A8FB2A006985F8 /* AirportSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5816DC0F24A8FB2A006985F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5816DC1124A8FB2A006985F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				58B5C0BD24B5445900A08C91 /* AirportModel.swift */,
+				580EB3F324BE45D200AE7154 /* CustomError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				5816DC1024A8FB2A006985F8 /* AppDelegate.swift in Sources */,
 				58B5C0B924B5421200A08C91 /* AirportService.swift in Sources */,
 				58B5C0BE24B5445900A08C91 /* AirportModel.swift in Sources */,
+				580EB3F424BE45D200AE7154 /* CustomError.swift in Sources */,
 				58F5983324AA4D990044D92B /* WindowCoordinator.swift in Sources */,
 				5896FC2F24B407E90044F45C /* AirportHttpService.swift in Sources */,
 				58B5C0B724B5006100A08C91 /* AirportHttpRouter.swift in Sources */,
