@@ -9,11 +9,15 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RxRelay
 
 class AirportSearchViewModel : AirportSearchViewProtocol {
     var input: AirportSearchViewProtocol.Input
     var output: AirportSearchViewProtocol.Output
     var airportService : AirportService
+    
+    typealias State = (airports: BehaviorRelay<Set<AirportModel>>, ())
+    private let state : State = (airports : BehaviorRelay<Set<AirportModel>> (value: []), ())
     
     private let bag = DisposeBag()
     
@@ -34,8 +38,9 @@ private extension AirportSearchViewModel {
     func processData() {
         airportService
             .fetchAirport()
-            .map({ (allAirports) in
-                print(allAirports[0])
+            .map({ Set($0) })
+            .map({ val in
+                self.state.airports.accept(val)
             })
             .subscribe()
             .disposed(by: bag)
