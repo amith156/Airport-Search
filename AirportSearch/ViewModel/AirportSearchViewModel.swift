@@ -63,7 +63,6 @@ private extension AirportSearchViewModel {
                             .lowercased()
                             .replacingOccurrences(of: " ", with: "")
                             .hasPrefix(searchKey.lowercased())
-                    
                 }
             })
             .map{
@@ -78,6 +77,7 @@ private extension AirportSearchViewModel {
             .fetchAirport()
             .map({ Set($0) })
             .map({ val in
+//                print("-------> \(val)")b
                 self.state.airports.accept(val)
             })
             .subscribe()
